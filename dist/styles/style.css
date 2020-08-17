@@ -14,6 +14,21 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-color: khaki;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: white;
+}
+
+a, a:hover, a:active {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.btn {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */
