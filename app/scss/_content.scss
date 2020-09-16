@@ -1,0 +1,47 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    
+    @include breakpoint-down(small) {
+        align-items: center;
+    }    
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint-down(small) {
+            width: min-content;
+        }
+    
+        @include breakpoint-up(medium) {
+            // height: toRem(800px);
+            height: 100vh;
+            flex-wrap:  wrap;
+            align-content: center;
+            border: 1px solid black;
+            background-image:
+                linear-gradient(to right, transparent, rgba(240, 204, 204, 1)),
+                radial-gradient(circle at top left, rgba(255, 255, 255, 0.9) 8%, transparent),
+                // linear-gradient(45deg, transparent 18%, rgba(231, 177, 177, .9), transparent 97%),
+                // radial-gradient(circle at 30% 0%, rgba(240, 204, 204, .5) , rgba(245, 222, 222, .5)  15%, rgba(240, 204, 204, .4) 15%, transparent 30%),
+                repeating-radial-gradient(circle at 30% 0%, transparent, rgba(255, 255, 255, 0.233) 15%),
+                linear-gradient(to top right, transparent, rgba(231, 177, 177, 1) 50%),
+                repeating-radial-gradient(circle at 50% 100%, rgba(240, 204, 204, .5) , transparent 35%)        
+            ; 
+        }
+    }
+    
+    // @include breakpoint-down(small) {
+    //     flex-direction: column;
+    //     width: min-content;
+    // }
+
+    // @include breakpoint-up(medium) {
+    //     height: toRem(800px);
+    //     flex-flow: column wrap;
+    //     justify-content: flex-start;
+    //     align-content: center;
+    //     border: 1px solid black;
+    // }
+}

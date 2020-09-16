@@ -13,6 +13,7 @@ $font-lg: 1.25rem; // 20px
 $font-xlg: 1.5rem; // 24px
 $font-xxlg: 2rem; // 32px
 $font-xxxlg: 3rem; // 48px 
+$font-xxxxlg: 4rem;
 
 
 // Colors
@@ -25,5 +26,16 @@ $softRed: hsl(0, 93%, 68%);
 // Neutral
 $darkGrayishRed: hsl(0, 6%, 24%);
 
+// Custom
+$msgFont: hsl(357, 26%, 68%);
+$emailBorder: hsl(356, 18%, 83%);
+
 
 // Gradients
+$linear-gradient-light: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+$linear-gradient-dark: linear-gradient(135deg, hsl(0, 100%, 98%), hsl(0, 80%, 86%));
+$linear-gradient-darker: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+
+// Dimension
+$border-radius: 2rem;

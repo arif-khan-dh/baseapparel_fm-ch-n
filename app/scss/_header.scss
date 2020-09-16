@@ -1,0 +1,15 @@
+.header {
+    padding: toRem(30px);
+    padding-top: toRem(62px);
+    padding-left: 0;
+
+    @include breakpoint-down(small){
+        padding-left: toRem(25px);
+    }
+
+    @include breakpoint-up(medium) {
+        order: 1;
+        //flex: 1;
+    }
+
+}

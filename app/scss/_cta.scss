@@ -1,0 +1,125 @@
+.cta {
+
+    @include breakpoint-down(small){
+        text-align: center;
+        padding: 0 toRem(25px) 0 toRem(25px);;
+    }
+
+
+    @include breakpoint-up(medium){
+        order: 2;
+        max-width: 30%;
+        // width: 600px;
+        // width: min-content;
+        // align-self: flex-end;
+        margin-right: 5%;
+        // margin-top: 5%;
+    }
+
+
+    &__headline {
+        margin-top: toRem(60px);
+        font-size: $font-xxxxlg;
+        letter-spacing: 0.5rem;
+        color: $darkGrayishRed;
+        line-height: 4rem;
+
+        span {
+            color: $msgFont;
+            font-weight: 200;
+            opacity: 0.80;
+        }
+    }
+
+    &__msg {
+        // margin-top: toRem(28px);
+        color: $msgFont;
+        font-weight: 600;
+        opacity: 0.80;
+
+
+        @include breakpoint-up(medium) {
+            margin-top: toRem(30px);  
+        }
+    }
+
+    &__email {
+        position: relative;
+        margin-top: toRem(32px);
+        width: 100%;
+        border-radius: $border-radius;
+        border: 1px solid $emailBorder;
+        padding: toRem(5px) 0;
+        padding-left: toRem(24px);
+        border-left-width: 2px;
+
+        @include breakpoint-up(medium) {
+            margin-top: toRem(48px);
+        }
+
+        & > input {
+            width: 100%;
+            background-color: inherit;
+            border: none;
+            line-height: 2rem;
+            color: $darkGrayishRed;
+            
+            @include breakpoint-up(medium) {
+                height: toRem(56px);
+                font-size: $font-lg;
+            }
+        }
+
+        .btn {
+            display: inline-block;  
+            position: absolute;          
+            right: toRem(-1px);
+            top: toRem(-1px);
+            padding: toRem(5px);
+            padding-top: toRem(10px);
+            width: toRem(60px);
+            height: calc(100% + #{toRem(2px)});
+            background-image: $linear-gradient-darker;
+            //border-radius: toRem(30px);
+            border-radius: $border-radius;
+            box-shadow: 0px 20px 10px 0px rgba(65, 58, 58, 0.15);
+            text-align: center;
+
+            @include breakpoint-up(medium) {
+                width: toRem(100px);
+                padding-top: toRem(20px);
+            }
+            
+        }
+
+        & > img {
+            position: absolute;
+            top: 30%;
+            right: toRem(110px);
+
+            @include breakpoint-down(small){
+                top: 20%;
+                right: toRem(65px);
+            }
+        }
+    }
+
+    & > .err-msg-email {        
+        color: red;
+        font-size: $font-xxsm;
+        padding-left: 10%;
+        padding-top: 1%;
+
+        @include breakpoint-down(small){
+            text-align: left;
+        }
+    }
+
+    .show {
+        display: block;
+    }
+
+    .hide {
+        display: none;
+    }
+}

@@ -1,0 +1,17 @@
+.hero {
+
+    @include breakpoint-down(small) {
+        width: toRem(375px);
+        height: toRem(250px);
+        background-image: url(../../images/hero-mobile.jpg);
+    }
+
+
+    @include breakpoint-up(medium) {
+        order: 3;
+        width: toRem(610px);
+        height: toRem(800px);
+        background-image: url(../../images/hero-desktop.jpg);
+    }
+
+}
